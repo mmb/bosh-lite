@@ -7,3 +7,4 @@ cookbooks
 pkg/
 manifests/cf-manifest.yml
 latest-bosh-stemcell-warden.tgz
+compiled_package_cache
