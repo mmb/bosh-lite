@@ -23,7 +23,7 @@ Vagrant.configure('2') do |config|
 
     aws.keypair_name =        env.fetch('BOSH_LITE_KEYPAIR', 'bosh')
 
-    aws.ami = `curl -s https://bosh-lite-build-artifacts.s3.amazonaws.com/ami/bosh-lite-ami.list |tail -1`.chop
+    aws.ami = 'ami-8cb041e4'
     aws.block_device_mapping = [
         {
           :DeviceName => '/dev/sda1',
